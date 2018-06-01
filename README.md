@@ -70,3 +70,6 @@
 | picker-position         | String      |  'middle'  |  组件显示位置，只能设置为默认值或'bottom'  |
 | show-lunar-btn          | Boolean     |   false    |  是否显示农历转换按钮  |
 | select-icon             | String      |            |  选中农历按钮后的icon链接  |
+
+###  事件
+>dateSelectConfirm
