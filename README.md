@@ -74,3 +74,12 @@ select-icon | String |            | 选中农历按钮后的icon链接
 ------------ | ------------- | ------------- | -------------
 第一单元格内容 | 第二单元格内容 | 第二单元格内容 | 第二单元格内容
 第一列内容 | 第二列内容 | 第二列内容 | 第二列内容
+
+属性名 | 类型 | 默认值 | 描述
+------------ | ------------- | ------------- | -------------
+| date-picker-mode        | Boolean     |   false    |  组件是否显示 |
+| is-solar        		  | Boolean     |   true     |  组件是否以公历显示  |
+| show-weekday        	  | Boolean     |   true     |  组件是否显示星期几  |
+| picker-position         | String      |  'middle'  |  组件显示位置，只能设置为默认值或'bottom'  |
+| show-lunar-btn          | Boolean     |   false    |  是否显示农历转换按钮  |
+| select-icon             | String      |            |  选中农历按钮后的icon链接  |
