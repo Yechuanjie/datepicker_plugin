@@ -68,7 +68,7 @@
 | is-solar        		    | Boolean     |   true     |  组件是否以公历显示  |
 | show-weekday        	  | Boolean     |   true     |  组件是否显示星期几  |
 | picker-position         | String      |  'middle'  |  组件显示位置，只能设置为默认值或'bottom'  |
-| show-lunar-btn          | Boolean     |   false    |  是否显示农历转换按钮  |
+| show-lunar-btn          | Boolean     |   true     |  是否显示农历转换按钮  |
 | select-icon             | String      |            |  选中农历按钮后的icon链接  |
 
 ###  事件
