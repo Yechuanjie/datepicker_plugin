@@ -72,4 +72,13 @@
 | select-icon             | String      |            |  选中农历按钮后的icon链接  |
 
 ###  事件
->dateSelectConfirm
+>dateSelectConfirm  日期选择完成事件
+
+wxml
+```html
+<date-picker bind:dateSelectConfirm="confirm" />
+```
+js
+```javascript
+confirm: function(e) {}
+```
