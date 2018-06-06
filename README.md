@@ -80,22 +80,19 @@
 | select-icon      | String  |          | 选中农历按钮后的 icon 链接               |
 
 ### 事件
-> 事件绑定方式
+> dateSelectConfirm 日期选择完成事件
 
-wxml
+**wxml**
 
 ```html
 <date-picker bind:dateSelectConfirm="confirm" />
 ```
-js
+**js**
 ```javascript
 Page({ 
   confirm: function(e) {
-    // 返回参数详细介绍
+    // 返回选择日期的详细信息
+    console.log(e.detail);
   } 
 });
 ```
-> dateSelectConfirm 日期选择完成事件
-
-
-> 日期确认选择返回的详细参数
