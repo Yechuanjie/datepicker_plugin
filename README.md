@@ -80,6 +80,7 @@
 | select-icon      | String  |          | 选中农历按钮后的 icon 链接               |
 
 ### 事件
+
 > dateSelectConfirm 日期选择完成事件
 
 **wxml**
@@ -87,12 +88,48 @@
 ```html
 <date-picker bind:dateSelectConfirm="confirm" />
 ```
+
 **js**
+
 ```javascript
-Page({ 
+Page({
   confirm: function(e) {
     // 返回选择日期的详细信息
     console.log(e.detail);
-  } 
+    
+  }
 });
 ```
+
+返回值详细介绍
+> 当组件的 **is-solar** 属性为公历时，返回数据结构如下
+
+   { year: 2018, month: 5, day: 6 }  **注意**：月份需+1才是真实月份
+
+> 当组件的 **is-solar** 属性为农历时，返回数据结构如下
+
+   { 
+     "lYear":2018,"lMonth":4,"lDay":23,"Animal":"狗","IMonthCn":"四月","IDayCn":"廿三","cYear":2018,"cMonth":6,"cDay":6,"gzYear":"戊戌","gzMonth":"戊午","gzDay":"己巳","isToday":true,"isLeap":false,"nWeek":3,"ncWeek":"星期三","isTerm":true,"Term":"芒种","astro":"双子座"
+   }
+
+| 属性名   | 类型     | 描述                 |
+| -------- | -------- | -------------------- |
+| lYear    | Number   | 农历年份             |
+| lMonth   | Number   | 农历月份（不需要+1） |
+| lDay     | Number   | 农历日期             |
+| Animal   | String   | 年份生肖             |
+| IMonthCn | String   | 农历月份中文         |
+| IDayCn   | String   | 农历日期中文         |
+| cYear    | Number   | 公历年份             |
+| cMonth   | Number   | 公历月份（不需要+1） |
+| cDay     | Number   | 公历日期             |
+| gzYear   | String   | 天干地支年份         |
+| gzMonth  | String   | 天干地支月份         |
+| gzDay    | String   | 天干地支日期         |
+| isToday  | Bololean | 是否今天             |
+| isLeap   | Bololean | 是否闰年             |
+| nWeek    | Number   | 星期几 数字          |
+| ncWeek   | String   | 星期几 中文          |
+| isTerm   | Boolean  | 是否节气             |
+| Term     | String   | 节气                 |
+| astro    | String   | 星座                 |
