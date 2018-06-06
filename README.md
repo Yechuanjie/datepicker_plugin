@@ -155,10 +155,10 @@ Page({
 | isSolar  | Boolean  | 是否公历              |
 
 ### 自定义样式
-> confirm_btn
+#### confirm_btn
 
- 支持设置组件内 **确定按钮** 样式，设置值应该与class类名相同
+>  支持设置组件内 **确定按钮** 样式，设置值应该与class类名相同
 
-> cancel_btn
+#### cancel_btn
 
- 支持设置组件内 **取消按钮** 样式，设置值应该与class类名相同
+>  支持设置组件内 **取消按钮** 样式，设置值应该与class类名相同
