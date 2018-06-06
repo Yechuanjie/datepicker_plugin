@@ -101,8 +101,8 @@ Page({
 });
 ```
 
-#### **dateSelectConfirm**
-日期选择完成事件
+* #### **dateSelectConfirm** -> 日期选择完成事件
+
 > 当组件的 **is-solar** 属性为 **true** 时，返回数据结构如下
 
    { 
@@ -138,12 +138,12 @@ Page({
 | Term     | String   | 节气                 |
 | astro    | String   | 星座                 |
 
-#### dateSelectCancel
-日期选择取消事件
+* #### **dateSelectCancel** -> 日期选择取消事件
+
 > 该事件没有实际返回值，只是提供监听取消事件，可以根据需求来灵活设置取消之后页面的状态
 
-#### triggerLunar
-在日期选择器中切换公/农历事件
+* #### **triggerLunar** -> 在日期选择器中切换公/农历事件
+
 > 该事件返回数据结构如下
 
 { 
